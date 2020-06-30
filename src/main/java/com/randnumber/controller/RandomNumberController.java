@@ -1,4 +1,4 @@
-package com.randnumber.controllers;
+package com.randnumber.controller;
 
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
