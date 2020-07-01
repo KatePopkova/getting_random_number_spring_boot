@@ -7,6 +7,7 @@ import java.util.*;
 @Service
 public class RandomNumberGenerator {
     private static final int HIGHEST_RANDOM_BOUND = 101;
+
     private int id;
 
     public int generateRandomNumber() {
