@@ -15,14 +15,11 @@ public class RandomNumberGenerator {
        return new Random().nextInt(HIGHEST_RANDOM_BOUND);
     }
 
-    public List<Map<String, Integer>> toJsonFormat(int value) {
+    public Map<String, Integer> toJsonFormat(int value) {
         //a number is in JSON format with it's ID
-        List<Map<String, Integer>> number = new ArrayList<Map<String, Integer>>() {{
-            add(new LinkedHashMap<String, Integer>() {{
-                put("id", id);
-                put("number", value);}});
-        }};
-
+        Map<String , Integer> number = new LinkedHashMap<String, Integer>();
+        number.put("id", id);
+        number.put("number", value);
         return number;
     }
 }

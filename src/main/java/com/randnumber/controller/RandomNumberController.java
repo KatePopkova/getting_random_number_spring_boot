@@ -14,9 +14,9 @@ public class RandomNumberController {
     private RandomNumberGenerator randomNumberGenerator;
 
     @GetMapping
-    public List<Map<String, Integer>> getNumber() {
+    public Map<String, Integer> getNumber() {
         int number = randomNumberGenerator.generateRandomNumber();
-        List<Map<String, Integer>> numJsonFormat = randomNumberGenerator.toJsonFormat(number);
+        Map<String, Integer> numJsonFormat = randomNumberGenerator.toJsonFormat(number);
         return numJsonFormat;
     }
 }
